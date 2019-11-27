@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+}
+/*-------CSS for Christmas List app--------*/
+/*----Background Page----*/
+body {
+  background-image: radial-gradient(#000000, #0D5901);
+  background-color: #FFFFFF;
+  margin: 0;
+}
+/*---div Wrapper Section---*/
+#wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2%;
+  background-color: #FFFFFF;
+}
+/*---Header Section---*/
+header {
+  background: linear-gradient(to bottom, #000000 -30%, #0d5901 100%);
+  background-color: #0D5901;
+  text-align: left;
+  font-size: 1.1em;
+}
+/*---Site logo returns user to top of page---*/
+#sitelogo {
+  width: 7%;
+  height: auto;
+  margin:  0.5% 0 1% 1%;
+  padding: 1%;
+  vertical-align: middle;
+  display: inline-block;
+}
+/*---Header Title---*/
+h1 {
+  font-family: 'Cinzel Decorative', sans-serif;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 1% 0 0 0;
+  padding: 0.5% 0 0 0;
+}
+main {
+  text-align: center;
+}
+/*---Welcome statement---*/
+#welcome {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  color: #000000;
+  display: inline-block;
+  padding: 1%;
+  margin: 3% 0 0 0;
+}
+/*---div containing welcome image---*/
+#welcomeImg {
+  padding-bottom: 2%;
+  text-align: center;
+}
+#welcomeImg img {
+  max-width: 30%;
+  height: auto;
+  padding: 2%;
+  display: inline-block;
+  border-radius: 50%;
+}
+/*---Section element for to-do list---*/
+section {
+  background-color: #EBECF0;
+  margin: 0;
+  padding: 4% 0 8% 0;
+  text-align: center;
+}
+/*--Add some margins to h2--*/
+h2 {
+  margin: 0;
+}
+/*---To-Do List Title---*/
+.myTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  color: #000000;
+  display: inline-block;
+  padding: 1%;
+}
+/*---To-Do List div element---*/
+#myList {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/*---Add task input element---*/
+#myList .myInput {
+  margin: 0.5%;
+  padding: 1%;
+  background-color: #FFFFFF;
+  width: 35%;
+  height: auto;
+  font-size: 1.1em;
+  border-radius: 25px;
+  border: 1px solid grey;
+  outline: none;
+  display: inline-block;
+}
+/*---Add task button---*/
+.addBtn {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  color: #B3000C;
+  background-color: #EBECF0;
+  cursor: pointer;
+}
+/*---Increase icon size for task button--*/
+i {
+  font-size: 2.3em;
+}
+i:hover {
+  background-color: #0D5901;
+  border-radius: 25px;
+}
+/*--div element for to-do list---*/
+.content {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/*--div element for editing/deleting tasks---*/
+.task {
+  margin: 0;
+  padding: 0.5%;
+  text-align: center;
+}
+/*---input element for adding tasks---*/
+.taskInput {
+  margin: 0;
+  padding: 1.1%;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 25%;
+  font-size: 1.1em;
+  display: inline-block;
+}
+/*---Edit Button element---*/
+.editBtn {
+  margin: 0 0.5%;
+  padding: 8px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  background: #0d5901;
+  color: #FFFFFF;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+/*---Change opacity when user hovers over edit and delete buttons--*/
+.editBtn:hover, .deleteBtn:hover {
+  opacity: 60%;
+}
+/*---Delete Button element---*/
+.deleteBtn {
+  margin: 0 0.5%;
+  padding: 8px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  background: #B3000C;
+  color: #FFFFFF;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+/*---Footer element---*/
+#footer {
+  font-size: 0.9em;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: left;
+  margin: 1% 0 1% 1%;
+}
+#footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: inline-block;
+}
+#footer a:hover {
+  color: #00A6FF;
+}
+/*------------Responsive Media Queries-----------*/
+/*---Extra Small Mobile Devices (<= 300px)---*/
+@media only screen and (max-width: 319px) {
+  header {
+    font-size: 0.5em;
+  }
+  #sitelogo {
+    width: 12%;
+    padding: 1%;
+    margin:  0.5% 0 2% 1%;
+  }
+  h1 {
+    padding: 4% 0 0 0;
+  }
+  /*--Welcome paragraph--*/
+  #welcome {
+    font-size: 0.8em;
+    padding: 8% 3% 4% 3%;
+  }
+  /*---Welcome image---*/
+  #welcomeImg img {
+    max-width: 50%;
+    height: auto;
+    padding: 2%;
+  }
+  /*---Section to divide list from the rest of page---*/
+  section {
+    padding: 5% 0 20% 0;
+  }
+  h2 {
+    margin: 2% 0 1% 0;
+  }
+  .myTitle {
+    font-size: 0.8em;
+  }
+  /*---Input for adding tasks to list---*/
+  #myList .myInput {
+    width: 55%;
+    font-size: 1em;
+    padding: 1.5%;
+  }
+  /*---Plus Circle icon for add button element--*/
+  i {
+    font-size: 2em;
+  }
+  /*---Input element within task div---*/
+  .taskInput {
+    width: 32%;
+    font-size: 0.9em;
+    padding: 1.2%;
+    margin: 0 1% 0 6%;
+  }
+  /*---Edit and Delete buttons---*/
+  .editBtn, .deleteBtn {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+  #footer {
+    margin: 4%;
+    font-size: 0.7em;
+  }
+}
+/*----Small Mobile Devices (320 to 480px)---*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  header {
+    font-size: 0.6em;
+  }
+  #sitelogo {
+    width: 12%;
+    margin:  0.5% 0 2% 1%;
+    padding: 1%;
+  }
+  h1 {
+    padding: 5% 0 0 0;
+  }
+  /*---Welecome paragraph---*/
+  #welcome {
+    font-size: 1em;
+    padding: 8% 3% 4% 3%;
+  }
+  /*---Welcome image---*/
+  #welcomeImg img {
+    max-width: 50%;
+    height: auto;
+    padding: 2%;
+  }
+  /*---Section element to divide list from the rest of page---*/
+  section {
+    padding: 5% 0 20% 0;
+  }
+  h2 {
+    margin: 2% 0 1% 0;
+  }
+  /*---To-do List title---*/
+  .myTitle {
+    font-size: 0.8em;
+  }
+  /*---Input for adding tasks to list---*/
+  #myList .myInput {
+    width: 55%;
+    font-size: 1em;
+    padding: 1.5%;
+  }
+  /*---Plus Circle icon for add button element--*/
+  i {
+    font-size: 2em;
+  }
+  /*---Input element within task div---*/
+  .taskInput {
+    width: 32%;
+    font-size: 0.9em;
+    padding: 1.2%;
+    margin: 0 1% 0 5%;
+  }
+  /*---Edit and Delete buttons---*/
+  .editBtn, .deleteBtn {
+    font-size: 0.9em;
+    padding: 5px 10px;
+  }
+  #footer {
+    margin: 4%;
+    font-size: 0.8em;
+  }
+}
+/*---Small to Large Tablets (<= 768px)---*/
+@media only screen and (max-width: 786px) and (min-width: 600px) {
+  header {
+    font-size: 0.8em;
+  }
+  #sitelogo {
+    width: 9%;
+    margin: 0.5% 0 1.5% 1%;
+  }
+  h1 {
+    padding: 4% 0 0 0;
+  }
+  #welcome {
+    font-size: 1.2em;
+    margin: 6% 2% 4% 2%;
+  }
+  /*---Welcome image---*/
+  #welcomeImg img {
+    width: 50%;
+    height: auto;
+  }
+  /*---Section element to divide list from the rest of page---*/
+  section {
+    padding: 5% 0 28% 0;
+  }
+  h2 {
+    margin: 2% 0 1% 0;
+  }
+  /*---To-do List title---*/
+  .myTitle {
+    font-size: 1em;
+  }
+  /*---Input for adding tasks to list---*/
+  #myList .myInput {
+    width: 52%;
+    font-size: 1em;
+    padding: 1.5%;
+    margin: 0.5% 0.5% 0.5% 8%;
+  }
+  /*---Plus Circle icon for add button element--*/
+  i {
+    font-size: 2.1em;
+  }
+  /*---Input element within task div---*/
+  .taskInput {
+    width: 32%;
+    font-size: 1em;
+    padding: 1.2%;
+    margin: 0 1% 0 5%;
+  }
+  /*---Edit and Delete buttons---*/
+  .editBtn, .deleteBtn {
+    font-size: 0.9em;
+    padding: 5px 10px;
+  }
+  #footer {
+    margin: 3%;
+  }
+}
